@@ -1,0 +1,21 @@
+.works-section {
+  display: none;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1158px) {
+  .works-section {
+    display: block;
+    padding-bottom: 120px;
+  }
+
+  .works-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .works-item {
+    flex-basis: calc((100% - 24px * 2) / 3);
+  }
+}
+

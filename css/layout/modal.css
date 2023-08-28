@@ -1,0 +1,197 @@
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: var(--border-color-input);
+  transition: opacity var(--transition-dur-and-func),
+    visibility var(--transition-dur-and-func);
+}
+
+.modal {
+  position: absolute;
+  padding: 72px 16px 24px 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 392px;
+  min-height: 584px;
+  border-radius: 4px;
+  background: var(--modal-bg-color);
+
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  transition: transform var(--transition-dur-and-func);
+}
+
+.btn-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background-color: var(--accent-color);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color var(--transition-dur-and-func),
+    border var(--transition-dur-and-func);
+}
+
+.btn-close-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: fill var(--transition-dur-and-func);
+}
+
+.btn-close:hover .btn-close-icon,
+.btn-close:focus .btn-close-icon {
+  fill: white;
+}
+
+.btn-close:hover,
+.btn-close:focus {
+  background-color: var(--acive-color);
+  border: none;
+}
+
+.contact-form-title {
+  color: var(--dark-color);
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.contact-container-label {
+  margin-bottom: 8px;
+}
+
+.contact-label {
+  display: block;
+  color: var(--secondary-text-color);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+  line-height: 1.17;
+}
+
+.contact-input-wrapper {
+  position: relative;
+  height: 40px;
+}
+
+.contact-input {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color-input);
+  padding-left: 38px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color var(--transition-dur-and-func);
+}
+
+.contact-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+  transition: fill var(--transition-dur-and-func);
+}
+
+.contact-input:focus + .contact-icon {
+  fill: var(--brand-color);
+}
+
+.contact-input:focus {
+  border-color: var(--brand-color);
+  outline-color: transparent;
+}
+
+.contact-container-comment {
+  margin-bottom: 16px;
+}
+
+.contact-comment {
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  resize: none;
+  border-radius: 4px;
+  border: 1px solid var(--border-color-input);
+  padding: 8px 16px;
+  line-height: 1.17;
+  background-color: transparent;
+  transition: border-color var(--transition-dur-and-func);
+  outline: transparent;
+  letter-spacing: 0.04em;
+  color: var(--border-color-input);
+}
+
+.contact-comment:focus {
+  border-color: var(--brand-color);
+  outline-color: transparent;
+}
+
+.privacy-container {
+  margin-bottom: 24px;
+}
+
+.contact-label-chexbox {
+  display: block;
+  align-items: center;
+  font-size: 12px;
+  color: var(--secondary-text-color);
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+
+.privacy-container-icon {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--border-color-input);
+  border-radius: 2px;
+  transition: background-color var(--transition-dur-and-func),
+    border var(--transition-dur-and-func), fill var(--transition-dur-and-func);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.contact-checkbox-input:checked
+  + .contact-label-chexbox
+  > .privacy-container-icon {
+  fill: var(--light-bg-color);
+  background-color: var(--acive-color);
+  border: none;
+}
+
+.link-privacy-policy {
+  color: var(--brand-color);
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    padding: 72px 16px 24px 16px;
+    width: 408px;
+    min-height: 584px;
+  }
+}

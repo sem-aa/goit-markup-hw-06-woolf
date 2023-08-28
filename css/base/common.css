@@ -1,0 +1,91 @@
+/* ===== NORMALIZE ===== */
+body {
+    color: var(--primary-text-color);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: var(--white-color);
+    letter-spacing: 0.02em;
+}
+
+address {
+    font-style: normal;
+}
+
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    display: block;
+    cursor: pointer;
+
+    font-family: inherit;
+    line-height: inherit;
+}
+
+input {
+    font-family: inherit;
+    line-height: inherit;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.logo {
+    color: var(--brand-color);
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-weight: 800;
+}
+
+.dark-part-logo {
+    color: var(--dark-color);
+}
+
+.logo-part-light {
+    color: var(--light-bg-color);
+}
+
+/* ===== /NORMALIZE ===== */
