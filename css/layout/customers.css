@@ -2,7 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 16px;
+  row-gap: 72px;
+  column-gap: 16px;
 }
 
 .customers-item {

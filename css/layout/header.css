@@ -161,6 +161,7 @@
   }
 
   .address-link {
+    font-size: 12px;
     color: var(--primary-text-color);
     transition: color var(--transition-dur-and-func);
   }

@@ -22,7 +22,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 392px;
+  width: 100%;
   min-height: 584px;
   border-radius: 4px;
   background: var(--modal-bg-color);
@@ -186,6 +186,12 @@
 
 .link-privacy-policy {
   color: var(--brand-color);
+}
+
+@media screen and (min-width: 428px) {
+  .modal {
+    width: 392px;
+  }
 }
 
 @media screen and (min-width: 768px) {
